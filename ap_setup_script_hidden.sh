@@ -3,7 +3,9 @@
 
 if [[ $# -lt 4 ]]
    then
-     echo 'Usage: sudo ./ap_setup_script.sh wifi_username wifi_password hotspot_username hotspot_password'
+     echo 'Usage: sudo ./ap_setup_script_hidden.sh wifi_username wifi_password hotspot_username hotspot_password'
+     echo 'Usage: sudo ./ap_setup_script_hidden.sh Existing_wifi Existing_wifi_password SensorwebWifi sensorweb'
+
    exit 1
 fi
 
