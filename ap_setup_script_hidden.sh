@@ -56,3 +56,6 @@ echo "sudo /etc/init.d/ssh restart" >> $automatic_local_file
 echo "exit 0" >> $automatic_local_file 
 
 cat $automatic_local_file
+
+
+echo 'Done!'
