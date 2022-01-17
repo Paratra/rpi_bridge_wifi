@@ -16,6 +16,7 @@ In Rpi system, running the bash script as:
 
 
 For EDU wifi:
+
 <1> 
 Same as for hidden wifi
 
