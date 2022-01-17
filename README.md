@@ -12,4 +12,19 @@ Install a standard Raspberry Pi image onto the SD card;
 
 <3>
 In Rpi system, running the bash script as:
-'Usage: sudo ./ap_setup_script.sh wifi_username wifi_password hotspot_username hotspot_password'
+'Usage: sudo ./ap_setup_script_hidden.sh wifi_username wifi_password hotspot_username hotspot_password'
+
+
+For EDU wifi:
+<1> 
+Same as for hidden wifi
+
+<2>
+Same as for hidden wifi
+
+<3>
+In Rpi system, running the bash script as:
+'Usage: sudo ./ap_setup_script_edu.sh edu_wifi_ssid edu_wifi_identity edu_wifi_password hotspot_username hotspot_password'
+
+Reference:
+https://inrg.soe.ucsc.edu/howto-connect-raspberry-to-eduroam/ 
