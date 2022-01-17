@@ -11,4 +11,5 @@ Install a standard Raspberry Pi image onto the SD card;
 
 
 <3>
+In Rpi system, running the bash script as:
 'Usage: sudo ./ap_setup_script.sh wifi_username wifi_password hotspot_username hotspot_password'
