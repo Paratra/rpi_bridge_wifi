@@ -26,6 +26,7 @@ echo '#################################'
 echo 'Installing Environment'
 apt-get install git -y
 apt-get install util-linux procps hostapd iproute2 iw haveged dnsmasq -y
+apt-get install iptables -y
 
 echo '#################################'
 echo 'Installing create_ap'

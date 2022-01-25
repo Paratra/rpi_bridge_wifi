@@ -27,6 +27,8 @@ echo '#################################'
 echo 'Installing Environment'
 apt-get install git -y
 apt-get install util-linux procps hostapd iproute2 iw haveged dnsmasq -y
+apt-get install iptables -y
+
 
 echo '#################################'
 echo 'Installing create_ap'
@@ -41,12 +43,12 @@ echo 'Setting..'
 output=/etc/wpa_supplicant/wpa_supplicant.conf
 
 echo "network={" >> $output
-echo "    ssid='$wifi_username'" >> $output
-echo "    EAP=PEAP" >> $output
+echo "    ssid=\"$wifi_username\"" >> $output
+echo "    eap=PEAP" >> $output
 echo "    key_mgmt=WPA-EAP" >> $output
-echo "    pahse2='auth=MCHAPV2'" >> $output
-echo "    identity='$wifi_identity'" >> $output
-echo "    psk='$wifi_password'" >> $output
+echo "    phase2=\"auth=MSCHAPV2\"" >> $output
+echo "    identity=\"$wifi_identity\"" >> $output
+echo "    psk=\"$wifi_password\"" >> $output
 echo "}" >> $output
 
 cat $output
