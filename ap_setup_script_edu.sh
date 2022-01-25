@@ -48,7 +48,7 @@ echo "    eap=PEAP" >> $output
 echo "    key_mgmt=WPA-EAP" >> $output
 echo "    phase2=\"auth=MSCHAPV2\"" >> $output
 echo "    identity=\"$wifi_identity\"" >> $output
-echo "    psk=\"$wifi_password\"" >> $output
+echo "    password=\"$wifi_password\"" >> $output
 echo "}" >> $output
 
 cat $output
